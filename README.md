@@ -42,7 +42,7 @@ rem_waste_accent_analyzer/
 ```
 ## 🖥️ Live Demo
 Try the live demo here: 
-[![Open in Hugging Face Spaces](https://tasmimulhuda-english-accent-detection-from-video-url.hf.space/)]
+[Open in Hugging Face Spaces](https://tasmimulhuda-english-accent-detection-from-video-url.hf.space/)
 
 ### Note on Confidence Scores: 
 The confidence score indicates the model's certainty in its prediction. Lower confidence scores, even with successful accent detection, are common in English accent classification. This is primarily because various English accents share a high degree of acoustic similarity, making subtle distinctions challenging for the model. The score reflects the closeness of the top probable accent candidates.
