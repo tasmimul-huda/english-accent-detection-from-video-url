@@ -54,7 +54,7 @@ rem_waste_accent_analyzer/
 
 ```bash
 # Clone the repository or set up the folder manually
-git clone https://github.com/yourusername/rem_waste_accent_analyzer.git
+git clone https://github.com/tasmimul-huda/english-accent-detection-from-video-url.git
 cd rem_waste_accent_analyzer
 
 # Create and activate virtual environment
