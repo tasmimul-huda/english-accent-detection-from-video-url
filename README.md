@@ -66,10 +66,6 @@ https://drive.google.com/file/d/1XEcmK8mjcK_KA3wtyv3I4Eyk5sLz6H6f/view?usp=shari
 ```
 https://drive.google.com/file/d/1JTr17UssCvvq74aTEOXWh4-rXPjKml_s/view?usp=sharing
 ``` 
-youtube: 
-```
-https://www.youtube.com/watch?v=Jrjwm0O1dDY&pp=ygURYXVzdHJhbGlhbiBhY2NlbnQ%3D
-```
 
 ### Note on Confidence Scores:  
 The confidence score indicates the model's certainty in its prediction. Lower confidence scores, even with successful accent detection, are common in English accent classification. This is primarily because various English accents share a high degree of acoustic similarity, making subtle distinctions challenging for the model. The score reflects the closeness of the top probable accent candidates.
