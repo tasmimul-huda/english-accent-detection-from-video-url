@@ -40,13 +40,18 @@ rem_waste_accent_analyzer/
 └── static/
     └── style.css         # Custom Tailwind styles
 ```
+## 🖥️ Live Demo
+Try the live demo here: 
+[![Open in Hugging Face Spaces](https://tasmimulhuda-english-accent-detection-from-video-url.hf.space/)]
 
+### Note on Confidence Scores: 
+The confidence score indicates the model's certainty in its prediction. Lower confidence scores, even with successful accent detection, are common in English accent classification. This is primarily because various English accents share a high degree of acoustic similarity, making subtle distinctions challenging for the model. The score reflects the closeness of the top probable accent candidates.
 ---
 
 ## 🛠️ Setup Instructions
 
 ### 1. Prerequisites
-- Python 3.8+
+- Python 3.10+
 - FFmpeg
 - yt-dlp
 
@@ -86,23 +91,6 @@ Then open: [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 ## 🐳 Docker Support
 
-Create a `Dockerfile` in the root directory:
-
-```Dockerfile
-# Dockerfile
-FROM python:3.9-slim
-
-WORKDIR /app
-
-COPY . /app
-
-RUN apt update && apt install -y ffmpeg &&     pip install --no-cache-dir --upgrade pip &&     pip install --no-cache-dir speechbrain transformers torchaudio huggingface_hub numpy scipy tqdm Flask Flask-Executor yt-dlp
-
-EXPOSE 5000
-
-CMD ["python", "app.py"]
-```
-
 To build and run the container:
 
 ```bash
@@ -110,16 +98,6 @@ docker build -t accent-analyzer .
 docker run -p 5000:5000 accent-analyzer
 ```
 
----
-
-## 🔍 Troubleshooting
-
-- **yt-dlp file write error**: Check directory permissions.
-- **FFmpeg path error**: Ensure FFmpeg is installed and added to PATH.
-- **SpeechBrain model error**: Clear huggingface cache if needed.
-- **No result displayed**: Check browser console for JavaScript errors.
-
----
 
 ## 📦 Technologies
 
